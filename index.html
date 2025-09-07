@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloha Ya'll - Hawaiian Soul Food Truck</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Dancing+Script:wght@400;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sticky Order Button -->
+    <div class="floating-order-btn">
+        <button class="order-floating">
+            Order Now
+        </button>
+    </div>
+
+    <!-- Top Right Navigation -->
+    <div class="top-nav">
+        <a href="#about" class="btn nav-btn">About Us</a>
+        <a href="#menu" class="btn nav-btn">View Menu</a>
+        <a href="#contact" class="btn nav-btn">Contact Us</a>
+    </div>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="background_removed_image_gVURO7wKRwCpPJuxea0ZZA.png" alt="Aloha Ya'll Logo" class="logo-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-grid">
+                <div class="about-content-section">
+                    <div class="about-text-overlay fade-in-left">
+                        <h2>Our Story</h2>
+                        <p>We're just a husband and wife team living the dream - if that dream is serving Hawaiian food with zero formal training and our only credentials being "we've been to Hawaii like... a lot." 🌺</p>
+                        
+                        <p>Our culinary expertise comes from years of aggressive vacation eating, countless trips to every plate lunch spot on the islands, and the fact that my wife's grandma actually lived there (which basically makes us experts, right?).</p>
+                    </div>
+                </div>
+                
+                <div class="about-image-section fade-in-right" style="background-image: url('food1.jpg');">
+                    <div class="image-overlay">
+                        <h3>Fresh • Authentic • Delicious</h3>
+                    </div>
+                </div>
+                
+                <div class="about-image-section-alt fade-in-left" style="background-image: url('food2.jpg');">
+                    <div class="image-overlay-alt">
+                        <h3>Made with Aloha</h3>
+                    </div>
+                </div>
+                
+                <div class="about-content-section-alt">
+                    <div class="about-text-overlay-alt fade-in-right">
+                        <p>Sure, we don't have fancy chef degrees, but we do have an unhealthy obsession with authentic Hawaiian food and the audacity to think y'all might want some too.</p>
+                        <p><strong>Spoiler alert: you do.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <div class="menu-categories">
+                    <div class="menu-category featured">
+                        <h3>Our Specialties</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h4>Authentic Hawaiian Teriyaki Chicken</h4>
+                                    <p>Traditional island-style chicken marinated in our signature teriyaki sauce, grilled to perfection with that authentic Hawaiian flavor you've been craving</p>
+                                </div>
+                                <span class="price">$12.99</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h4>Hawaiian Mac Salad</h4>
+                                    <p>The real deal - creamy, rich mac salad made the traditional Hawaiian way with perfectly cooked macaroni, mayonnaise, and just the right touch of sweetness</p>
+                                </div>
+                                <span class="price">$6.99</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h4>Coconut Rice</h4>
+                                    <p>Fluffy jasmine rice cooked in rich coconut milk with a hint of tropical sweetness - the perfect complement to any Hawaiian meal</p>
+                                </div>
+                                <span class="price">$4.99</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-category">
+                        <h3>Plate Combos</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h4>The Full Aloha Plate</h4>
+                                    <p>Our signature teriyaki chicken served with Hawaiian mac salad and coconut rice - the complete island experience</p>
+                                </div>
+                                <span class="price">$16.99</span>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-info">
+                                    <h4>Mini Aloha Plate</h4>
+                                    <p>Smaller portion of our teriyaki chicken with your choice of mac salad or coconut rice</p>
+                                </div>
+                                <span class="price">$11.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Find Us</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Location</h3>
+                        <p>We'll be rolling around town! Check our social media for daily locations.</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Hours</h3>
+                        <p>Tuesday - Saturday: 11:00 AM - 8:00 PM<br>
+                        Sunday: 12:00 PM - 6:00 PM<br>
+                        Closed Mondays</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Contact</h3>
+                        <p>Phone: (555) 123-ALOHA<br>
+                        Email: hello@alohayall.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Aloha Ya'll Food Truck. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll triggered animations
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    console.log('Element coming into view:', entry.target);
+                    entry.target.classList.add('visible');
+                } else {
+                    // Remove visible class when element goes out of view for re-triggering
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Wait for DOM to be ready
+        document.addEventListener('DOMContentLoaded', function() {
+            // Observe all fade elements
+            const fadeElements = document.querySelectorAll('.fade-in-left, .fade-in-right');
+            console.log('Found fade elements:', fadeElements.length);
+            
+            fadeElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        // Floating button hide on scroll up
+        let lastScrollTop = 0;
+        const floatingBtn = document.querySelector('.floating-order-btn');
+
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // Scrolling down
+                floatingBtn.style.transform = 'translateY(100px)';
+            } else {
+                // Scrolling up
+                floatingBtn.style.transform = 'translateY(0)';
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html>
