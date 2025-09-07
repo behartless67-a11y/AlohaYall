@@ -113,10 +113,11 @@ main {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%;
-    height: 1px;
+    width: 80%;
+    height: 9px;
     background: linear-gradient(90deg, transparent, #4a9b9b, transparent);
-    opacity: 0.6;
+    opacity: 1;
+    box-shadow: 0 3px 9px rgba(74, 155, 155, 0.4);
 }
 
 .hero-content {
@@ -208,10 +209,11 @@ main {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%;
-    height: 1px;
+    width: 80%;
+    height: 9px;
     background: linear-gradient(90deg, transparent, #4a9b9b, transparent);
-    opacity: 0.6;
+    opacity: 1;
+    box-shadow: 0 3px 9px rgba(74, 155, 155, 0.4);
 }
 
 .about-grid {
@@ -344,10 +346,11 @@ main {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%;
-    height: 1px;
+    width: 80%;
+    height: 9px;
     background: linear-gradient(90deg, transparent, #4a9b9b, transparent);
-    opacity: 0.6;
+    opacity: 1;
+    box-shadow: 0 3px 9px rgba(74, 155, 155, 0.4);
 }
 
 .menu::before {
@@ -610,10 +613,11 @@ main {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%;
-    height: 1px;
+    width: 80%;
+    height: 9px;
     background: linear-gradient(90deg, transparent, #4a9b9b, transparent);
-    opacity: 0.8;
+    opacity: 1;
+    box-shadow: 0 3px 9px rgba(74, 155, 155, 0.4);
 }
 
 .contact-item {
