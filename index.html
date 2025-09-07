@@ -11,9 +11,110 @@
 
     <!-- Sticky Order Button -->
     <div class="floating-order-btn">
-        <button class="order-floating">
+        <button class="order-floating" onclick="toggleOrderPopup()">
             Order Now
         </button>
+    </div>
+
+    <!-- Order Popup -->
+    <div id="orderPopup" class="order-popup">
+        <div class="order-popup-content">
+            <button class="close-popup" onclick="toggleOrderPopup()">&times;</button>
+            <h3>Place Your Order</h3>
+            
+            <form id="orderForm" class="order-form">
+                <!-- Customer Info -->
+                <div class="form-section">
+                    <h4>Contact Information</h4>
+                    <div class="form-row">
+                        <input type="text" id="customerName" placeholder="Your Name" required>
+                        <input type="tel" id="customerPhone" placeholder="Phone Number" required>
+                    </div>
+                    <input type="email" id="customerEmail" placeholder="Email Address" required>
+                </div>
+
+                <!-- Menu Items -->
+                <div class="form-section">
+                    <h4>Menu Items</h4>
+                    
+                    <div class="menu-item-order">
+                        <div class="item-header">
+                            <span class="item-name">Authentic Hawaiian Teriyaki Chicken</span>
+                            <span class="item-price">$12.99</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button type="button" onclick="changeQuantity('chicken', -1)">-</button>
+                            <input type="number" id="chicken-qty" value="0" min="0" readonly>
+                            <button type="button" onclick="changeQuantity('chicken', 1)">+</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-order">
+                        <div class="item-header">
+                            <span class="item-name">Hawaiian Mac Salad</span>
+                            <span class="item-price">$6.99</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button type="button" onclick="changeQuantity('mac', -1)">-</button>
+                            <input type="number" id="mac-qty" value="0" min="0" readonly>
+                            <button type="button" onclick="changeQuantity('mac', 1)">+</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-order">
+                        <div class="item-header">
+                            <span class="item-name">Coconut Rice</span>
+                            <span class="item-price">$4.99</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button type="button" onclick="changeQuantity('rice', -1)">-</button>
+                            <input type="number" id="rice-qty" value="0" min="0" readonly>
+                            <button type="button" onclick="changeQuantity('rice', 1)">+</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-order">
+                        <div class="item-header">
+                            <span class="item-name">The Full Aloha Plate</span>
+                            <span class="item-price">$16.99</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button type="button" onclick="changeQuantity('full', -1)">-</button>
+                            <input type="number" id="full-qty" value="0" min="0" readonly>
+                            <button type="button" onclick="changeQuantity('full', 1)">+</button>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-order">
+                        <div class="item-header">
+                            <span class="item-name">Mini Aloha Plate</span>
+                            <span class="item-price">$11.99</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button type="button" onclick="changeQuantity('mini', -1)">-</button>
+                            <input type="number" id="mini-qty" value="0" min="0" readonly>
+                            <button type="button" onclick="changeQuantity('mini', 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Requests -->
+                <div class="form-section">
+                    <h4>Special Requests & Allergies</h4>
+                    <textarea id="specialRequests" placeholder="Please let us know about any food allergies, dietary restrictions, or special requests..."></textarea>
+                </div>
+
+                <!-- Order Total -->
+                <div class="order-total">
+                    <div class="total-line">
+                        <span>Total: $<span id="orderTotal">0.00</span></span>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-order">Send Order via Email</button>
+            </form>
+        </div>
     </div>
 
     <!-- Top Right Navigation -->
@@ -44,13 +145,13 @@
                 </div>
                 
                 <div class="about-image-section fade-in-right" style="background-image: url('food1.jpg');">
-                    <div class="image-overlay">
+                    <div class="image-overlay fade-in-up">
                         <h3>Fresh • Authentic • Delicious</h3>
                     </div>
                 </div>
                 
                 <div class="about-image-section-alt fade-in-left" style="background-image: url('food2.jpg');">
-                    <div class="image-overlay-alt">
+                    <div class="image-overlay-alt fade-in-up">
                         <h3>Made with Aloha</h3>
                     </div>
                 </div>
@@ -58,7 +159,7 @@
                 <div class="about-content-section-alt">
                     <div class="about-text-overlay-alt fade-in-right">
                         <p>Sure, we don't have fancy chef degrees, but we do have an unhealthy obsession with authentic Hawaiian food and the audacity to think y'all might want some too.</p>
-                        <p><strong>Spoiler alert: you do.</strong></p>
+                        <p><strong class="spoiler-alert">SPOILER ALERT: YOU DO.</strong></p>
                     </div>
                 </div>
             </div>
@@ -124,7 +225,7 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <h3>Location</h3>
-                        <p>We'll be rolling around town! Check our social media for daily locations.</p>
+                        <p>Crozet, Virginia area! Check our social media for daily locations.</p>
                     </div>
                     <div class="contact-item">
                         <h3>Hours</h3>
@@ -134,8 +235,8 @@
                     </div>
                     <div class="contact-item">
                         <h3>Contact</h3>
-                        <p>Phone: (555) 123-ALOHA<br>
-                        Email: hello@alohayall.com</p>
+                        <p>Phone: (540) 460-7676<br>
+                        Email: sweetmahalo1919@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -144,7 +245,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Sweet Mahalo Food Truck. All rights reserved.</p>
+            <p>&copy; 2025 Sweet Mahalo Food Truck. All rights reserved.</p>
         </div>
     </footer>
 
@@ -170,7 +271,7 @@
         // Wait for DOM to be ready
         document.addEventListener('DOMContentLoaded', function() {
             // Observe all fade elements
-            const fadeElements = document.querySelectorAll('.fade-in-left, .fade-in-right');
+            const fadeElements = document.querySelectorAll('.fade-in-left, .fade-in-right, .fade-in-up');
             console.log('Found fade elements:', fadeElements.length);
             
             fadeElements.forEach(el => {
@@ -193,6 +294,115 @@
                 floatingBtn.style.transform = 'translateY(0)';
             }
             lastScrollTop = scrollTop;
+        });
+
+        // Order popup functions
+        function toggleOrderPopup() {
+            const popup = document.getElementById('orderPopup');
+            popup.classList.toggle('active');
+        }
+
+        // Close popup when clicking outside
+        document.getElementById('orderPopup').addEventListener('click', function(e) {
+            if (e.target === this) {
+                toggleOrderPopup();
+            }
+        });
+
+        // Menu item prices
+        const menuPrices = {
+            chicken: 12.99,
+            mac: 6.99,
+            rice: 4.99,
+            full: 16.99,
+            mini: 11.99
+        };
+
+        // Change quantity function
+        function changeQuantity(item, change) {
+            const qtyInput = document.getElementById(item + '-qty');
+            let currentQty = parseInt(qtyInput.value);
+            currentQty += change;
+            
+            if (currentQty < 0) currentQty = 0;
+            
+            qtyInput.value = currentQty;
+            updateOrderTotal();
+        }
+
+        // Update order total
+        function updateOrderTotal() {
+            let total = 0;
+            
+            for (const item in menuPrices) {
+                const qty = parseInt(document.getElementById(item + '-qty').value) || 0;
+                total += qty * menuPrices[item];
+            }
+            
+            document.getElementById('orderTotal').textContent = total.toFixed(2);
+        }
+
+        // Handle form submission
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get customer information
+            const customerName = document.getElementById('customerName').value;
+            const customerPhone = document.getElementById('customerPhone').value;
+            const customerEmail = document.getElementById('customerEmail').value;
+            const specialRequests = document.getElementById('specialRequests').value;
+            
+            // Build order details
+            let orderItems = [];
+            let orderTotal = 0;
+            
+            for (const item in menuPrices) {
+                const qty = parseInt(document.getElementById(item + '-qty').value) || 0;
+                if (qty > 0) {
+                    const itemName = document.querySelector(`#${item}-qty`).closest('.menu-item-order').querySelector('.item-name').textContent;
+                    const itemTotal = qty * menuPrices[item];
+                    orderItems.push(`${qty}x ${itemName} - $${itemTotal.toFixed(2)}`);
+                    orderTotal += itemTotal;
+                }
+            }
+            
+            if (orderItems.length === 0) {
+                alert('Please select at least one item to order.');
+                return;
+            }
+            
+            // Generate email
+            const subject = encodeURIComponent('New Order from Sweet Mahalo Website');
+            const body = encodeURIComponent(`
+New Order Details:
+
+Customer Information:
+Name: ${customerName}
+Phone: ${customerPhone}
+Email: ${customerEmail}
+
+Order Items:
+${orderItems.join('\n')}
+
+Order Total: $${orderTotal.toFixed(2)}
+
+Special Requests/Allergies:
+${specialRequests || 'None'}
+
+---
+This order was submitted through the Sweet Mahalo website.
+            `);
+            
+            const mailtoLink = `mailto:sweetmahalo1919@gmail.com?subject=${subject}&body=${body}`;
+            window.location.href = mailtoLink;
+            
+            // Close popup after sending
+            setTimeout(() => {
+                toggleOrderPopup();
+                // Reset form
+                document.getElementById('orderForm').reset();
+                updateOrderTotal();
+            }, 1000);
         });
     </script>
 </body>
