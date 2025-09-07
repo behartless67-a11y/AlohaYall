@@ -174,11 +174,31 @@ main {
     margin-bottom: 1rem;
 }
 
+/* Section Dividers */
+.section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #4a9b9b, transparent);
+    margin: 2rem 0;
+    opacity: 0.6;
+}
+
 /* About Section - Bon Me Inspired Layout */
 .about {
     padding: 0;
     background: white;
     position: relative;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #4a9b9b, transparent);
+    opacity: 0.6;
 }
 
 .about-grid {
@@ -297,6 +317,18 @@ main {
         linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
         url('Rainy_Blue_Ridge-27527.jpg') center/cover no-repeat;
     position: relative;
+}
+
+.menu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #4a9b9b, transparent);
+    opacity: 0.6;
 }
 
 .menu::before {
@@ -507,9 +539,11 @@ main {
 }
 
 .item-info p {
-    color: #666;
-    font-size: 1rem;
-    line-height: 1.5;
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-style: italic;
+    letter-spacing: 0.3px;
 }
 
 .price {
@@ -549,6 +583,18 @@ main {
     background-attachment: fixed;
     color: white;
     position: relative;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #4a9b9b, transparent);
+    opacity: 0.8;
 }
 
 .contact-item {
@@ -1047,6 +1093,11 @@ main {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
+    font-size: 4rem;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+    display: block;
+    text-align: center;
+    margin: 2rem 0;
 }
 
 .close-popup {
@@ -1226,6 +1277,15 @@ footer p {
         flex-direction: column;
         text-align: center;
         padding: 2rem 1rem;
+        background-attachment: scroll;
+    }
+    
+    .contact {
+        background-attachment: scroll;
+    }
+    
+    .parallax-bg {
+        background-attachment: scroll;
     }
     
     .hero h1 {
