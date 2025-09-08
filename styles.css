@@ -892,6 +892,30 @@ main {
     transform: translateY(-1px) scale(1.02);
 }
 
+.order-floating.coming-soon {
+    background: linear-gradient(135deg, #999, #666);
+    cursor: not-allowed;
+    opacity: 0.8;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 1.2rem 2.5rem;
+}
+
+.order-floating.coming-soon:hover {
+    transform: none;
+    box-shadow: 
+        0 10px 30px rgba(153, 153, 153, 0.3),
+        0 6px 20px rgba(0,0,0,0.2),
+        inset 0 1px 0 rgba(255,255,255,0.3);
+}
+
+.coming-soon-text {
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.9;
+    font-style: italic;
+}
+
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
