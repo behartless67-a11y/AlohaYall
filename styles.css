@@ -550,6 +550,13 @@ main {
     transition: all 0.1s ease;
 }
 
+.included-note {
+    font-size: 0.9rem;
+    color: #4a9b9b;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
 .item-info h4 {
     font-family: 'Oswald', sans-serif;
     font-size: 1.4rem;
