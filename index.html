@@ -288,18 +288,20 @@
     <script>
         // Scroll triggered animations
         const observerOptions = {
-            threshold: 0.2,
-            rootMargin: '0px 0px -100px 0px'
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    console.log('Element coming into view:', entry.target);
                     entry.target.classList.add('visible');
                 } else {
-                    // Remove visible class when element goes out of view for re-triggering
-                    entry.target.classList.remove('visible');
+                    // Only remove visible class if element is significantly out of view
+                    const rect = entry.boundingClientRect;
+                    if (rect.bottom < -100 || rect.top > window.innerHeight + 100) {
+                        entry.target.classList.remove('visible');
+                    }
                 }
             });
         }, observerOptions);
