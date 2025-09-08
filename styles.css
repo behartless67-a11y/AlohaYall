@@ -557,6 +557,15 @@ main {
     margin-bottom: 0;
 }
 
+/* Responsive descriptions */
+.description-mobile {
+    display: none;
+}
+
+.description-full {
+    display: block;
+}
+
 .item-info h4 {
     font-family: 'Oswald', sans-serif;
     font-size: 1.4rem;
@@ -1319,6 +1328,15 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Switch to mobile descriptions */
+    .description-full {
+        display: none;
+    }
+    
+    .description-mobile {
+        display: block;
+    }
+
     .nav-menu {
         display: none;
     }
