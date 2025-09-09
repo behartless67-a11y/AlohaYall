@@ -151,9 +151,17 @@ Sweet Mahalo is a home-based Hawaiian food operation in Crozet, VA, serving auth
 #### Pickup Operations Plan
 - **Time slots**: 2-hour windows (12-2pm, 2-4pm, 4-6pm) 
 - **Location**: Customer pickup at house (driveway/front door)
-- **Process**: Grill chicken outside for aroma marketing, keep sides warm/chilled, 2-3 minute assembly per order
 - **Payment**: Venmo or cash
 - **Customer experience**: Knock and serve, smell of grilling creates natural marketing
+
+#### Food Prep Strategy
+- **Mac salad**: Made ahead in large batch (better flavor when it sits)
+- **Coconut rice**: Keep warm in rice cooker until pickup
+- **Chicken**: Batch & sear method for optimal efficiency and freshness
+  - Pre-cook all marinated chicken thighs fully (7-8 minutes)
+  - Keep warm in slow cooker or low oven
+  - When customer arrives: 1-2 minute hot sear for fresh char and aroma
+  - **Result**: Fresh grill smell and appearance with 2-3 minute per-order timing
 
 #### Market Positioning
 - **Target market**: Crozet neighborhood (limited competition, unique offering)
