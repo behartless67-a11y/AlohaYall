@@ -1442,6 +1442,13 @@ footer p {
         text-align: left;
         font-size: 1.3rem;
     }
+    
+    /* Smaller tagline on mobile */
+    .tagline span {
+        font-size: 0.9rem !important;
+        padding: 8px 16px !important;
+        letter-spacing: 1px !important;
+    }
 }
 
 @media (max-width: 480px) {
