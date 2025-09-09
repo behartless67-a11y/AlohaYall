@@ -124,26 +124,60 @@ Sweet Mahalo is a home-based Hawaiian food operation in Crozet, VA, serving auth
 - Updates push automatically when main branch is updated
 - Domain: https://behartless67-a11y.github.io/AlohaYall/
 
-## Business Model
+## Business Plan & Strategy
 
-### Operating Approach
-- **Home-based operation** (not mobile truck)
+### Updated Business Model (January 2025)
+
+#### Operating Schedule
+- **Weekend-only operation** - Both work full-time jobs during the week
+- **Weekly cycle**: 
+  - Saturday/Sunday: Orders open
+  - Wednesday/Thursday: Order cutoff
+  - Saturday/Sunday: Prep, cook, and customer pickup
+- **Capacity**: 30-40 plates per week with two-person team
+- **Pickup**: Sunday only, customers come to house
+
+#### Revised Menu & Pricing
+- **Full Aloha Plate** - $12 (full chicken thigh + 3/4 cup each of mac salad & coconut rice)
+- **Mini Aloha Plate** - $8 (half portions of all three items)
+
+#### Cost Analysis (Updated)
+**Per Full Aloha Plate:**
+- Chicken thigh + marinade (soy sauce, rice wine vinegar, brown sugar, chili flake, garlic, ginger, sesame oil): ~$1.55
+- Mac salad (3/4 cup): ~$1.25  
+- Coconut rice (3/4 cup): ~$1.00
+- **Total food cost: ~$3.80 (32% food cost - excellent margin)**
+
+#### Pickup Operations Plan
+- **Time slots**: 2-hour windows (12-2pm, 2-4pm, 4-6pm) 
+- **Location**: Customer pickup at house (driveway/front door)
+- **Process**: Grill chicken outside for aroma marketing, keep sides warm/chilled, 2-3 minute assembly per order
+- **Payment**: Venmo or cash
+- **Customer experience**: Knock and serve, smell of grilling creates natural marketing
+
+#### Market Positioning
+- **Target market**: Crozet neighborhood (limited competition, unique offering)
+- **Launch strategy**: Soft launch with neighborhood only (~30 initial interested customers)
+- **Growth plan**: Start local, possibly expand to farmers market pop-ups
+- **Revenue goal**: Fun side income, not primary business
+
+#### Competitive Analysis
+- Few food trucks in Crozet specifically
+- Many in Charlottesville but none doing authentic Hawaiian
+- Unique position as only Hawaiian option in immediate area
+
+#### Key Success Factors
+1. **Neighborhood word-of-mouth** from quality and convenience
+2. **Authentic recipes** from extensive Hawaii "research" trips
+3. **Fresh preparation** - customers see/smell food being made
+4. **Manageable scale** - sustainable with full-time jobs
+5. **Home advantage** - lower overhead, personal touch
+
+### Original Business Model
+- **Home-based operation** (not mobile truck)  
 - **Order-ahead service** via email/phone
 - **Focus on quality** over quantity
 - **Authentic preparation** using traditional techniques
-
-### Target Market
-- Crozet, VA area
-- Hawaiian food enthusiasts
-- Customers seeking authentic, quality plate lunches
-- Lunch crowd looking for filling, flavorful meals
-
-### Competitive Advantages
-1. **Authentic recipes** from extensive Hawaii research
-2. **Quality ingredients** (Best Foods mayo, 24-hour marinades, etc.)
-3. **Personal story** - relatable husband/wife team
-4. **Honest branding** - upfront about home operation
-5. **Attention to detail** in traditional preparation methods
 
 ## Future Considerations
 
