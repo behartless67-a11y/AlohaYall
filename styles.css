@@ -986,6 +986,14 @@ main {
     font-style: italic;
 }
 
+/* Coming Soon price styling */
+.price.coming-soon-price {
+    color: #999;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
