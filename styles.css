@@ -28,10 +28,10 @@ body {
 .service-notice-content {
     background: linear-gradient(135deg, #ff6b35, #f7931e);
     color: white;
-    padding: 40px;
+    padding: 20px;
     border-radius: 20px;
     text-align: center;
-    max-width: 800px;
+    max-width: 400px;
     margin: 20px;
     position: relative;
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
@@ -39,19 +39,19 @@ body {
 }
 
 .overlay-logo {
-    max-width: 750px;
+    max-width: 375px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
 }
 
 .service-notice-content p {
-    font-size: 1.1rem;
-    margin: 15px 0;
+    font-size: 1rem;
+    margin: 10px 0;
     line-height: 1.4;
     font-weight: 400;
     letter-spacing: 0.5px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 0 3px 6px rgba(0,0,0,0.5);
     text-align: left;
 }
 
@@ -76,15 +76,16 @@ body {
     background: white;
     color: #ff6b35;
     border: none;
-    padding: 12px 30px;
+    padding: 10px 25px;
     border-radius: 25px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 15px;
     transition: all 0.3s ease;
     letter-spacing: 1px;
+    text-shadow: none;
 }
 
 .got-it-btn:hover {
@@ -95,16 +96,23 @@ body {
 
 @media (max-width: 768px) {
     .service-notice-content {
-        padding: 30px 25px;
+        padding: 15px 20px;
         margin: 15px;
     }
 
     .overlay-logo {
-        max-width: 600px;
+        max-width: 300px;
     }
 
     .service-notice-content p {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        margin: 8px 0;
+    }
+
+    .got-it-btn {
+        padding: 8px 20px;
+        font-size: 0.8rem;
+        margin-top: 12px;
     }
 }
 
