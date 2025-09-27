@@ -38,11 +38,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.service-notice-content h3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.2rem;
+.overlay-logo {
+    max-width: 250px;
+    height: auto;
     margin-bottom: 20px;
-    font-weight: 700;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
 }
 
 .service-notice-content p {
@@ -51,6 +51,7 @@ body {
     line-height: 1.4;
     font-weight: 400;
     letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .close-notice {
@@ -97,8 +98,8 @@ body {
         margin: 15px;
     }
 
-    .service-notice-content h3 {
-        font-size: 1.8rem;
+    .overlay-logo {
+        max-width: 200px;
     }
 
     .service-notice-content p {
