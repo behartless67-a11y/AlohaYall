@@ -57,6 +57,12 @@ body {
 
 .expansion-text {
     color: #40E0D0 !important;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(64, 224, 208, 0.6), 0 3px 6px rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.2);
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-top: 15px !important;
 }
 
 .close-notice {
