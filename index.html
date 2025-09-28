@@ -60,6 +60,13 @@
                     <input type="email" id="customerEmail" placeholder="Email Address" required>
                 </div>
 
+                <!-- Pickup Time -->
+                <div class="form-section">
+                    <h4>Pickup Time</h4>
+                    <input type="text" id="pickupTime" placeholder="What time do you plan to pick up? (e.g., 2:00 PM)" required>
+                    <small>Pickup available Sunday only - we'll confirm exact time windows via email</small>
+                </div>
+
                 <!-- Menu Items -->
                 <div class="form-section">
                     <h4>Menu Items</h4>
@@ -68,6 +75,16 @@
                         <div class="item-header">
                             <span class="item-name">The Full Aloha Plate</span>
                             <span class="item-price">$14</span>
+                        </div>
+                        <div class="item-description">
+                            <p>Your choice of protein served with Hawaiian mac salad and coconut rice. Garnished with fresh scallions and toasted sesame seeds.</p>
+                        </div>
+                        <div class="protein-selection">
+                            <label>Choose your protein:</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="protein" value="chicken" checked> Teriyaki Chicken</label>
+                                <label><input type="radio" name="protein" value="tofu"> Teriyaki Tofu</label>
+                            </div>
                         </div>
                         <div class="quantity-control">
                             <button type="button" onclick="changeQuantity('full', -1)">-</button>
@@ -389,6 +406,8 @@
             const customerName = document.getElementById('customerName').value;
             const customerPhone = document.getElementById('customerPhone').value;
             const customerEmail = document.getElementById('customerEmail').value;
+            const pickupTime = document.getElementById('pickupTime').value;
+            const selectedProtein = document.querySelector('input[name="protein"]:checked').value;
             const specialRequests = document.getElementById('specialRequests').value;
             
             // Build order details
@@ -419,8 +438,10 @@ Customer Information:
 Name: ${customerName}
 Phone: ${customerPhone}
 Email: ${customerEmail}
+Preferred Pickup Time: ${pickupTime}
 
 Order Items:
+Protein Choice: ${selectedProtein === 'chicken' ? 'Teriyaki Chicken' : 'Teriyaki Tofu'}
 ${orderItems.join('\n')}
 
 Order Total: $${orderTotal.toFixed(2)}
