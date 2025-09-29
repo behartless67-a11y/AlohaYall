@@ -94,17 +94,6 @@
                     </div>
 
 
-                    <div class="menu-item-order">
-                        <div class="item-header">
-                            <span class="item-name">Coconut Lime Tres Leches</span>
-                            <span class="item-price coming-soon-price">COMING SOON</span>
-                        </div>
-                        <div class="quantity-control">
-                            <button type="button" onclick="changeQuantity('dessert', -1)">-</button>
-                            <input type="number" id="dessert-qty" value="0" min="0" readonly>
-                            <button type="button" onclick="changeQuantity('dessert', 1)">+</button>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Special Requests -->
@@ -121,7 +110,7 @@
                 </div>
 
                 <!-- Submit Button -->
-                <button type="submit" class="submit-order">Send Order via Email</button>
+                <button type="submit" class="submit-order">Complete Order</button>
             </form>
         </div>
     </div>
@@ -253,19 +242,6 @@
                         </div>
                     </div>
 
-                    <div class="menu-category">
-                        <h3>Desserts</h3>
-                        <div class="menu-items">
-                            <div class="menu-item">
-                                <div class="item-info">
-                                    <h4>Coconut Lime Tres Leches</h4>
-                                    <p class="description-full">A fluffy coconut cake that gets absolutely wrecked by three different milks because we believe in commitment through complete dairy immersion. This cake has more relationships with milk than most people have with humans - coconut milk for the tropical vibes, sweetened condensed milk for the sweetness addiction, and whole milk because why not make it weird. Honey and lime zest show up to complicate things further because apparently this dessert needed trust issues. Topped with whipped cream and toasted coconut that's basically flexing on every other topping. It's tropical, creamy, and refreshing like a beach vacation that actually delivered on its promises. Perfect for cooling off after our plate lunch punched your taste buds in the face.</p>
-                                    <p class="description-mobile">Dessert so good, we had to use three different types of milk to contain its power.</p>
-                                </div>
-                                <span class="price coming-soon-price">COMING SOON</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -370,8 +346,7 @@
 
         // Menu item prices
         const menuPrices = {
-            full: 14.00,
-            dessert: 8.99
+            full: 14.00
         };
 
         // Change quantity function
